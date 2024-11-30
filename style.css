@@ -147,3 +147,36 @@ h2 {
   margin-block-start: 5px;
   margin-block-end: 5px;
 } 
+
+/* Companies */
+.companies-container {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.companies-container hr {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin-left: 5cm;
+}
+
+.company-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+}
+
+.company-card h3 {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.company-card li {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+
+#sub-item {
+  font-size: 16px;
+  margin-left: 30px;
+}
