@@ -52,3 +52,56 @@ body {
   margin-right: 10px;
   float:left;
 }
+
+/* Titles */
+h2 {
+  text-align: justify;
+  font-size: 50px;
+  text-align: center;
+  float: left;
+  color: #F16E00;
+  margin: 30px;
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.introduction {
+  text-align: justify;
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  animation-duration: 5s;
+  position: relative;
+}
+
+.container {
+  display: flex;
+}
+
+/* About Me */
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
+#about-me h1 {
+  font-size: 65px;
+  margin-top: 90px;
+  color: #F16E00;
+}
+
+#about-me p {
+  font-size: 25px;
+  color: rgb(128, 128, 128);
+  margin-top: -1cm;
+}
+
+.profile_image {
+  width: 550px;
+  height: fit-content;
+  vertical-align: middle;
+  margin: 5px;
+}
