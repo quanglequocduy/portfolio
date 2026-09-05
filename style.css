@@ -12,10 +12,10 @@
   --text:      #e7edf5;
   --muted:     #93a1b3;
   --faint:     #6b7a8d;
-  --accent:    #6ea8fe;   /* primary — blue */
-  --accent-2:  #5eead4;   /* metrics — teal */
-  --accent-3:  #fbbf24;   /* awards — amber */
-  --glow:      rgba(110, 168, 254, 0.14);
+  --accent:    #f16e00;   /* primary — hipages orange */
+  --accent-2:  #ff9a4d;   /* metrics — light orange */
+  --accent-3:  #ffc24d;   /* awards — warm gold */
+  --glow:      rgba(241, 110, 0, 0.16);
   --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --maxw: 1080px;
@@ -141,7 +141,7 @@ a:hover { text-decoration: underline; }
 .btn-primary {
   background: var(--accent); color: #06121f; border-color: var(--accent);
 }
-.btn-primary:hover { background: #85b6ff; }
+.btn-primary:hover { background: #ff8a2f; }
 .btn svg { width: 16px; height: 16px; }
 
 /* stat row */
