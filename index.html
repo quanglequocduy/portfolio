@@ -1,315 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Quang Le - Portfolio</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quang Le — Software Engineer &amp; MLOps</title>
+  <meta name="description" content="Le Quoc Duy Quang — Software Engineer &amp; MLOps at hipages Group (ASX-listed). Owner of the Matching Engine, AI Value-Based Pricing, and the ML model-serving platform on Databricks." />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0a0d12" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Quang Le — Software Engineer &amp; MLOps" />
+  <meta property="og:description" content="Owner of the Matching Engine · AI Value-Based Pricing · ML Serving on Databricks. #1 contributor on the MOX team at hipages Group." />
+  <meta property="og:image" content="./images/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Quang Le — Software Engineer &amp; MLOps" />
+  <meta name="twitter:description" content="Owner of the Matching Engine · AI Value-Based Pricing · ML Serving on Databricks." />
+  <meta name="twitter:image" content="./images/og.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <!--Navigation Bar-->
-  <nav>
-    <div id="home">
-      <div class="profile_name">
-        Quang Le
-        <div class="contact_info">
-          <img src="images/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope">
-          duyquangbtx@gmail.com
+  <a class="skip-link" href="#work">Skip to content</a>
+
+  <!-- ============================ NAV ============================ -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span>Quang Le</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#recognition">Recognition</a>
+        <a class="nav-cta" href="https://github.com/lequocduyquang" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" id="top">
+      <div class="container">
+        <p class="eyebrow">Software Engineer · MLOps · Sydney / HCMC</p>
+        <h1>Le Quoc Duy&nbsp;<span class="grad">Quang</span></h1>
+        <p class="hero-sub">
+          Backend &amp; ML Systems Engineer
+          <span class="sep">/</span> hipages Group <span class="sep">·</span> ASX-listed
+        </p>
+        <p class="hero-blurb">
+          Core member and <strong>#1 contributor</strong> on the MOX team at Australia's largest online
+          trade marketplace. Primary owner of the <strong>Matching Engine</strong> and core MLOps engineer
+          owning <strong>ML model serving</strong> on Databricks &mdash; shipping AI pricing, recommendation,
+          and generative features end-to-end from mobile to model registry.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:duyquangbtx@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            Get in touch
+          </a>
+          <a class="btn" href="https://github.com/lequocduyquang" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/quang-le-448606197/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://quangle.hashnode.dev" target="_blank" rel="noopener">Blog</a>
+          <a class="btn" href="https://huggingface.co/quanglequocduy" target="_blank" rel="noopener">Hugging&nbsp;Face</a>
         </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="images/linkedin.png" alt="https://icons8.com/icon/124377/circled-envelope">
-          <a href="https://www.linkedin.com/in/quang-le-448606197/">LinkedIn</a>
-        </div>
-      </div>
 
-      <div class="topdiv">
-        <a class="topmenu" href="#about-me">About Me</a>
-        <a class="topmenu" href="#skills">Skills</a>
-        <a class="topmenu" href="#companies">Companies</a>
-        <a class="topmenu" href="#recommendation">Recommendation</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- About Me -->
-  <section id="about-me" class="container">
-    <div>
-      <h1>
-        Hi, I'm Quang Le! <img src="images/waving-hand.png" width="60px"/>
-      </h1>
-      <p>
-        I am a Software Engineer with 5 years of experience, especially on Backend Architecture, Database and Cloud AWS.
-        I have worked on applications and microservices, designed scalable and high-throughput systems. 
-        With passion learning and exploring new technologies, I am always looking for new challenges and opportunities to grow.
-      </p>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div style="clear: both;"></div>
-
-    <div class="all_skills">
-      <div class="skill">
-        <img src="images/node.png" alt="NodeJS"/>
-        <h6>NodeJS</h6>
-        <p>4 years experience</p>
-      </div>
-      <div class="skill">
-        <img src="images/js.jpeg" alt="JS"/>
-        <h6>Javascript</h6>
-        <p>4 years experience</p>
-      </div>
-      <div class="skill">
-        <img src="images/postgres.png" alt="Postgres"/>
-        <h6>Postgres</h6>
-        <p>4 years experience</p>
-      </div>
-      <div class="skill">
-        <img src="images/redis.png" alt="Redis"/>
-        <h6>Redis</h6>
-        <p>4 years experience</p>
-      </div>
-      <div class="skill">
-        <img src="images/kafka.png" alt="Kafka"/>
-        <h6>Kafka</h6>
-        <p>1 year experience</p>
-      </div>
-      <div class="skill">
-        <img src="images/docker.jpg" alt="Docker"/>
-        <h6>Docker</h6>
-        <p>1 year experience</p>
-      </div>
-      <div class="skill">
-        <img src="images/aws.jpg" alt="AWS"/>
-        <h6>AWS</h6>
-        <p>1 year experience</p>
-      </div>
-      <div class="skill">
-        <img src="images/go.png" alt="Golang"/>
-        <h6>Golang</h6>
-        <p>1 year experience</p>
-      </div>
-      <div class="skill">
-        <img src="images/html5.png" alt="HTML"/>
-        <h6>HTML</h6>
-        <p>6 months experience</p>
-      </div>
-      <div class="skill">
-        <img src="images/CSS3.png" alt="CSS"/>
-        <h6>CSS</h6>
-        <p>6 months experience</p>
-      </div>
-      <div class="skill">
-        <img src="images/react.png" alt="React"/>
-        <h6>React</h6>
-        <p>6 months experience</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Companies -->
-  <section class="companies" id="companies">
-    <h2>
-      Companies
-    </h2>
-    <div style="clear: both;"></div>
-
-    <div id="companies-container" class="companies-container">
-      <div class="company-card">
-        <h3>CBTW - hipages [2024 - now]</h3>
-        <ul>
-          <li>Software Engineer
-            <ul>
-              <li>Achievements</li>
-              <ul>
-                <li id="sub-item">Contribute and improve performance latency for Matching Engine with <b>4x faster</b></li>
-                <li id="sub-item">Design and implement, shipment Production features for TMX team</li>
-                <li id="sub-item"><b>Edison Reward, Monthly Reward</b> for contribute to grow team up</li>
-              </ul>
-            </ul>
-            <ul>
-              <li>Jobs</li>
-              <ul>
-                <li id="sub-item">Microservices system: Design, Build, Monitor</li>
-                <li id="sub-item">Responsible for develop features to push up performance of TMX Team</li>
-                <li id="sub-item">Learn, Design, Testing and Deliver values for our tradies</li>
-              </ul>
-            </ul>
-            <ul>
-              <li>Skills</li>
-              <ul>
-                <li id="sub-item">NestJS - Postgres - Kafka - Redis - BullMQ - React - Temporal - AWS</li>
-                <li id="sub-item">ArgoCD - Grafana - Prometheus - Git - Humio - Copilot - XP Programming</li>
-              </ul>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="company-card">
-        <h3>BAEMIN [2022 - 2023]</h3>
-        <ul>
-          <li>Backend Engineer
-            <ul>
-              <li>Achievements</li>
-              <ul>
-                <li id="sub-item">Design asynchronous communication between services with AWS SQS (Ex:
-                  orders queue, reconcile queue, …) consume and process average <b>40k orders per day</b></li>
-                <li id="sub-item">
-                  Apply worker-thread module to optimize workload of calculate AMR, deduct
-management report per month for over <b>80k merchants</b>
-                </li>
-                <li id="sub-item">Partition for table customer limits with <b>80 million records</b>
-                </li>
-                <li id="sub-item">
-                  Design bull queue for asynchronous job: upload, download chunk file report with <b>1.2 millions 
-                    orders</b> with AWS S3
-                </li>
-                <li id="sub-item">
-                  Build Challenge Hub Game in promotion services for BAEMIN App. Now this
-feature have more than <b>13k users</b> joined
-                </li>
-                <li id="sub-item">
-                  Build new Mass upload/update tool for tuna service to reduce <b>2,580 working
-                    hours</b> (~ 11k usd agent hiring expense) of Merchant Ops team when action with
-                  config menu
-                </li>
-              </ul>
-            </ul>
-            <ul>
-              <li>Jobs</li>
-              <ul>
-                <li id="sub-item">Microservices system: Design, Build, Monitor</li>
-                <li id="sub-item">Responsible for develop features to push up KPIs of Settlement and Engagement Squad</li>
-                <li id="sub-item">Learn, Design and Deliver values for our users</li>
-              </ul>
-            </ul>
-            <ul>
-              <li>Skills</li>
-              <ul>
-                <li id="sub-item">NestJS - Postgres - Redis - BullMQ - AWS S3 - AWS SQS</li>
-                <li id="sub-item">Cloudwatch - ZohoCRM - Salesforce</li>
-              </ul>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="company-card">
-        <h3>TIKI [2021 - 2022]</h3>
-        <ul>
-          <li>Software Engineer
-            <ul>
-              <li>Achievements</li>
-              <ul>
-                <li id="sub-item">Design, Build and Release successfully the service <b>ds-viral</b></li>
-              </ul>
-            </ul>
-            <ul>
-              <li>Jobs</li>
-              <ul>
-                <li id="sub-item">Microservices system: Design, Build, Monitor</li>
-                <li id="sub-item">Learn, Design and Deliver values for our users</li>
-              </ul>
-            </ul>
-            <ul>
-              <li>Skills</li>
-              <ul>
-                <li id="sub-item">Golang - Postgres - Redis - Kafka</li>
-              </ul>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="company-card">
-        <h3>VEXERE [2019 - 2021]</h3>
-        <ul>
-          <li>Software Engineer
-            <ul>
-              <li>Achievements</li>
-              <ul>
-                <li id="sub-item">Optimize performance for trip service from <b>12 pods to 1 pod</b> in K8s</li>
-                <li id="sub-item">Resolve issue of performance of caching <b>millions of tickets </b>(My Ticket feature)</li>
-                <li id="sub-item">Apply Materialize View, Tweaking Indexes for improve performance of database</li>
-              </ul>
-            </ul>
-            <ul>
-              <li>Jobs</li>
-              <ul>
-                <li id="sub-item">Microservices system: Design, Build, Monitor</li>
-                <li id="sub-item">Responsible for develop features to push up KPIs of VEX team</li>
-                <li id="sub-item">Learn, Design and Deliver values for our users</li>
-              </ul>
-            </ul>
-            <ul>
-              <li>Skills</li>
-              <ul>
-                <li id="sub-item">NodeJS - Postgres - Redis - Kafka</li>
-              </ul>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Recommendations -->
-  <section id="recommendations">
-    <h2>Recommendations</h2>
-    <div style="clear: both;"></div>
-
-    <div class="all_recommendations" id="all_recommendations">
-      <div class="recommendation">
-        <span>&#8220;</span>
-        He possesses a deep understanding of [specific technologies/languages/frameworks] and consistently delivers high-quality solutions.
-        Quang has a remarkable ability to analyze complex problems and implement effective and efficient solutions. 
-        He played a key role in Baemin backend team, where his expertise in backend development was instrumental in the project's success. 
-        What sets Quang apart is not just his technical proficiency, but also his dedication to understanding the business requirements and delivering solutions that align perfectly with them.
-        I highly recommend Quang to any team looking for a talented backend developer who can bring both technical expertise and a collaborative spirit to the table. 
-        He would undoubtedly be a valuable asset to any project or organization.
-        <span>&#8221;</span>
-      </div>
-
-      <div class="recommendation">
-        <span>&#8220;</span>
-        Quang is a very hard-working person who can tackle any problems with ease. We have worked together on several projects, and I found him a skilled and dedicated professional. 
-        His expertise in the backend chapter has helped our company immensely. 
-        He’s also an all-around great guy to work with! I highly recommend him to anyone looking for help on their team.
-        <span>&#8221;</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Recommendation Form  -->
-  <section id="contact">
-    <div class="flex_center">
-      <fieldset>
-        <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+        <div class="stats" role="list" aria-label="Impact at hipages">
+          <div class="stat" role="listitem">
+            <div class="num" data-count="720" data-suffix="+">720+</div>
+            <div class="label">Merged PRs across 20+ repos</div>
           </div>
-      </fieldset>
+          <div class="stat" role="listitem">
+            <div class="num" data-count="4" data-suffix="x">4x</div>
+            <div class="label">Matching Engine latency</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="num" data-count="6" data-suffix="+">6+</div>
+            <div class="label">Years shipping backend systems</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="num" data-count="27" data-suffix="">27</div>
+            <div class="label">Technical design docs authored</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============================ WORK ============================ -->
+    <section id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Selected Work</span>
+          <h2>Systems I own end-to-end</h2>
+          <p>Flagship work at hipages &mdash; from the revenue-critical Matching Engine to the
+             AI pricing and ML-serving platform behind it.</p>
+        </div>
+
+        <div class="work-grid">
+
+          <!-- 1 Matching Engine -->
+          <article class="project reveal">
+            <div class="project-top">
+              <div>
+                <span class="pidx">01</span>
+                <h3>Matching Engine</h3>
+              </div>
+              <span class="role owner">PRIMARY OWNER</span>
+            </div>
+            <p class="lead">
+              The revenue-critical service that scores, prices, and matches every job to the right
+              tradies in real time &mdash; ~94 merged PRs in <code>marketplace</code>.
+            </p>
+            <ul>
+              <li>Improved end-to-end latency <b>4x</b> via LRU caching, N+1 query elimination, and
+                  CDC-over-Kafka decoupling from the legacy PHP monolith.</li>
+              <li>Applied database indexing on the <b>1&nbsp;TB</b> leads table, sharply cutting
+                  Matching Engine query time.</li>
+              <li>Hardened throughput under load &mdash; <b>bounded tradie fan-out</b> and DB
+                  connection-pool exhaustion, centralised Redis TTLs.</li>
+              <li>Integrated <b>3 ML endpoints</b> (Dynamic Pricing, RecSys scoring, Recurring-Job
+                  predictor) with full OpenTelemetry instrumentation.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">NestJS</span><span class="chip">TypeScript</span>
+              <span class="chip">PostgreSQL</span><span class="chip">Redis</span>
+              <span class="chip">Kafka / CDC</span><span class="chip">Temporal</span>
+              <span class="chip">OpenTelemetry</span>
+            </div>
+          </article>
+
+          <!-- 2 AI VBP -->
+          <article class="project reveal">
+            <div class="project-top">
+              <div>
+                <span class="pidx">02</span>
+                <h3>AI Value-Based Pricing (VBP)</h3>
+              </div>
+              <span class="role owner">DESIGN &amp; DELIVERY LEAD</span>
+            </div>
+            <p class="lead">
+              A new pricing paradigm: value each job with an LLM and derive lead price from predicted
+              job value &mdash; rolled out as a controlled region/category A/B experiment.
+            </p>
+            <ul>
+              <li>Built a reusable <b>Amazon Bedrock</b> model-chain provider (Claude Sonnet via the
+                  AI SDK, IRSA auth, confidence &amp; idempotency guards).</li>
+              <li>Designed cohort A/B arms by region, value-range derivation, eligibility, capture, and
+                  a per-tradie <b>validation modal</b> with feedback telemetry.</li>
+              <li>Authored the <b>PRD, pricing-component validation (NFR-1)</b>, and a 48-case test
+                  evidence log; drove staged prod enrolment across pools A/B.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">Amazon Bedrock</span><span class="chip">Claude Sonnet</span>
+              <span class="chip">Vercel AI SDK</span><span class="chip">GrowthBook A/B</span>
+              <span class="chip">NestJS</span><span class="chip">OpenTelemetry</span>
+            </div>
+          </article>
+
+          <!-- 3 MLOps -->
+          <article class="project reveal">
+            <div class="project-top">
+              <div>
+                <span class="pidx">03</span>
+                <h3>ML Model-Serving Platform</h3>
+              </div>
+              <span class="role">CORE MLOps ENGINEER</span>
+            </div>
+            <p class="lead">
+              Owner of the serving infrastructure on Databricks behind Dynamic Pricing, job-sizing, and
+              category models &mdash; ~50 PRs across <code>hipages-ml-models</code>,
+              <code>hipages-dynamic-pricing</code>, and <code>bruce</code>.
+            </p>
+            <ul>
+              <li>Migrated CI/CD to <b>Databricks Asset Bundles</b> with a staging gate, MLflow model
+                  registry, AI-Gateway inference tables, and post-deploy smoke tests.</li>
+              <li>Ran <b>Dynamic Pricing V2</b> as a per-category shadow → A/B → productionise cutover
+                  with dual-endpoint routing and clean per-master roll-forward / rollback.</li>
+              <li>Retrained &amp; served the <b>Bruce job-sizing</b> models on Databricks; migrated
+                  Clefairy/Muriel category suggestion into ml-models behind a feature flag.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">Databricks</span><span class="chip">MLflow</span>
+              <span class="chip">DABS</span><span class="chip">Python</span>
+              <span class="chip">databricks-sdk</span><span class="chip">GrowthBook</span>
+            </div>
+          </article>
+
+          <!-- 4 AI product -->
+          <article class="project reveal">
+            <div class="project-top">
+              <div>
+                <span class="pidx">04</span>
+                <h3>Generative AI Product Features</h3>
+              </div>
+              <span class="role">END-TO-END</span>
+            </div>
+            <p class="lead">
+              Shipped LLM-powered features spanning the React Native app, backend services, and event
+              tracking &mdash; presented at the Engineering All-Hands Showcase.
+            </p>
+            <ul>
+              <li><b>AI-Powered Job Overview</b> &mdash; natural-language job summaries via OpenAI across
+                  mobile, leads service, and analytics, with OpenTelemetry observability and graceful
+                  LLM-unavailable degradation.</li>
+              <li><b>Agentic RAG for Job Sizing</b> &mdash; a multi-step agent using function calling,
+                  web search, and vector-store retrieval (All-Hands, Aug 2025).</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">OpenAI</span><span class="chip">Agentic RAG</span>
+              <span class="chip">Vector Search</span><span class="chip">React Native</span>
+              <span class="chip">NestJS</span><span class="chip">Mixpanel</span>
+            </div>
+          </article>
+
+          <!-- 5 Platform / infra -->
+          <article class="project reveal">
+            <div class="project-top">
+              <div>
+                <span class="pidx">05</span>
+                <h3>Cloud Migration &amp; Platform</h3>
+              </div>
+              <span class="role">CROSS-REPO</span>
+            </div>
+            <p class="lead">
+              Led the MOX services' move from the legacy KOPS cluster to <code>hip-eks-prod</code>, plus
+              the IAM and security plumbing behind AI workloads &mdash; across
+              <code>infra-man</code>, <code>marketplace</code>, <code>leads</code>, <code>bruce</code>.
+            </p>
+            <ul>
+              <li>Dark-deployed services to EKS with <b>F5 ingress</b>, <b>IRSA</b> S3 access, Kafka
+                  <b>mTLS</b>, and Bedrock inference-profile IAM (prod + staging).</li>
+              <li>Provisioned Databricks OAuth M2M service principals with capped, yearly-rotated
+                  secrets; cleared <b>24+ high/critical Snyk</b> vulnerabilities across services.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">AWS EKS</span><span class="chip">Kubernetes</span>
+              <span class="chip">Terraform / IAM</span><span class="chip">ArgoCD</span>
+              <span class="chip">IRSA</span><span class="chip">Snyk</span>
+            </div>
+          </article>
+
+          <!-- 6 Reliability -->
+          <article class="project reveal">
+            <div class="project-top">
+              <div>
+                <span class="pidx">06</span>
+                <h3>Reliability &amp; Observability</h3>
+              </div>
+              <span class="role">ON-CALL / INCIDENTS</span>
+            </div>
+            <p class="lead">
+              Made the core revenue path observable and defensible &mdash; from span-level telemetry to
+              the team's alert registry and incident runbooks.
+            </p>
+            <ul>
+              <li>Built the <b>MOX Alert Registry &amp; dependency map</b>; migrated alerts from Humio to
+                  <b>Honeycomb</b> with SLOs, triggers, and runbooks for every alert.</li>
+              <li>Led resolution of <b>3 P2 production incidents</b>, coordinating hotfixes and CodePush
+                  deploys across mobile and backend.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">Honeycomb</span><span class="chip">OpenTelemetry</span>
+              <span class="chip">Grafana</span><span class="chip">SLOs / Alerts</span>
+              <span class="chip">Incident Response</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============================ SKILLS ============================ -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Toolbox</span>
+          <h2>Skills &amp; stack</h2>
+          <p>Backend-heavy generalist moving into AI/ML systems &mdash; certified Databricks ML &amp;
+             GenAI Engineer.</p>
+        </div>
+
+        <div class="skill-groups">
+          <div class="skill-card reveal">
+            <h4>Languages</h4>
+            <div class="chips">
+              <span class="chip">TypeScript</span><span class="chip">Golang</span>
+              <span class="chip">Python</span><span class="chip">SQL</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h4>Backend</h4>
+            <div class="chips">
+              <span class="chip">Node.js</span><span class="chip">NestJS</span>
+              <span class="chip">Kafka</span><span class="chip">Temporal</span>
+              <span class="chip">BullMQ</span><span class="chip">Microservices</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h4>AI / ML</h4>
+            <div class="chips">
+              <span class="chip">OpenAI API</span><span class="chip">Amazon Bedrock</span>
+              <span class="chip">Google Gemini</span><span class="chip">Databricks ML</span>
+              <span class="chip">Agentic RAG</span><span class="chip">MLflow</span>
+              <span class="chip">A/B (GrowthBook)</span><span class="chip">Claude Code</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h4>Infrastructure</h4>
+            <div class="chips">
+              <span class="chip">AWS</span><span class="chip">Kubernetes / EKS</span>
+              <span class="chip">Docker</span><span class="chip">PostgreSQL</span>
+              <span class="chip">Redis</span><span class="chip">ArgoCD</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h4>Observability</h4>
+            <div class="chips">
+              <span class="chip">OpenTelemetry</span><span class="chip">Honeycomb</span>
+              <span class="chip">Grafana</span><span class="chip">SLOs &amp; Alerts</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h4>Data</h4>
+            <div class="chips">
+              <span class="chip">Databricks</span><span class="chip">dbt</span>
+              <span class="chip">Airflow</span><span class="chip">Mixpanel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============================ EXPERIENCE ============================ -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Track record</span>
+          <h2>Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="tl-item current reveal">
+            <div class="tl-head">
+              <h3>Software Engineer &mdash; <span class="co">hipages Group</span></h3>
+              <span class="tl-when">Apr 2024 — Present</span>
+            </div>
+            <p class="tl-role">MOX team · ASX-listed · via CBTW</p>
+            <ul>
+              <li><b>#1 contributor</b> — 720+ merged PRs across 20+ repos (marketplace, leads,
+                  notifications, MLOps).</li>
+              <li>Primary owner of the Matching Engine and core MLOps engineer for ML serving on
+                  Databricks.</li>
+              <li>Shipped AI VBP, AI Job Overview, and Dynamic Pricing V2; led the MOX EKS migration.</li>
+              <li>Authored <b>27 technical docs</b>, built MCP servers and an AI agent knowledge base for
+                  developer tooling.</li>
+            </ul>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-head">
+              <h3>Backend Engineer &mdash; <span class="co">BAEMIN</span></h3>
+              <span class="tl-when">2022 — 2023</span>
+            </div>
+            <p class="tl-role">Woowa Brothers Vietnam</p>
+            <ul>
+              <li>Async inter-service comms over AWS SQS processing <b>40,000 orders/day</b>;
+                  worker-threads for 80,000+ merchant report calculations.</li>
+              <li>Table partitioning for an <b>80M-record</b> customer-limits table; BullMQ chunked
+                  processing for 1.2M orders.</li>
+              <li>Built a Mass Upload tool saving <b>2,580 working hours</b> (~$11K) for Merchant Ops.</li>
+            </ul>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-head">
+              <h3>Software Engineer &mdash; <span class="co">TIKI</span></h3>
+              <span class="tl-when">2021 — 2022</span>
+            </div>
+            <p class="tl-role">TIKI Corporation</p>
+            <ul>
+              <li>Built microservices from scratch in <b>Golang</b> with PostgreSQL, Redis, and Kafka —
+                  Abstract Factory pattern and HashiCorp Vault integration.</li>
+            </ul>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-head">
+              <h3>Software Engineer &mdash; <span class="co">VEXERE</span></h3>
+              <span class="tl-when">2019 — 2021</span>
+            </div>
+            <p class="tl-role">Vexere</p>
+            <ul>
+              <li>Optimised trip-service from <b>12 pods to 1</b> via Redis caching and query tuning;
+                  designed 5 microservices handling millions of tickets.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============================ RECOGNITION ============================ -->
+    <section id="recognition">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Beyond the code</span>
+          <h2>Recognition &amp; community</h2>
+        </div>
+
+        <div class="rec-grid">
+          <div class="rec-card reveal">
+            <div class="ico">🏆</div>
+            <h4>Awards</h4>
+            <p><span class="accent">Edison Award</span> &amp; Inspirational Team Member Award at hipages
+               Group for outstanding engineering contributions.</p>
+          </div>
+          <div class="rec-card reveal">
+            <div class="ico">📜</div>
+            <h4>Certifications</h4>
+            <ul>
+              <li>Databricks Certified ML Engineer Associate <span class="accent">(2026)</span></li>
+              <li>Databricks Certified GenAI Engineer Associate <span class="accent">(2025)</span></li>
+              <li>B.Sc. Software Engineering — VNUHCM University of Science</li>
+            </ul>
+          </div>
+          <div class="rec-card reveal">
+            <div class="ico">🩺</div>
+            <h4>AI for good</h4>
+            <p>Volunteer at Children's Hospital No.2 (HCMC): built an AI pneumonia-diagnosis system from
+               chest X-rays using <span class="accent">ResNet50 / DenseNet121</span> with Explainable AI
+               (Eigen-CAM).</p>
+          </div>
+          <div class="rec-card reveal">
+            <div class="ico">✍️</div>
+            <h4>Writing &amp; community</h4>
+            <p>Newsletter team at <span class="accent">Grokking Vietnam</span>; Backend Engineer &amp;
+               Associate Lead at the Hulib knowledge-sharing community. Blog at quangle.hashnode.dev.</p>
+          </div>
+          <div class="rec-card reveal">
+            <div class="ico">🧮</div>
+            <h4>Earlier</h4>
+            <p><span class="accent">3rd Prize</span>, HCMC Mathematics Olympiad (Grade 12),
+               Bui Thi Xuan High School.</p>
+          </div>
+          <div class="rec-card reveal">
+            <div class="ico">📚</div>
+            <h4>Developer tooling</h4>
+            <p>Built the team's local-dev &amp; onboarding guide, MCP servers, and the
+               <span class="accent">hipages-agent-knowledge</span> base powering AI-assisted engineering.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer id="contact">
+    <div class="container">
+      <h3>Let's build something.</h3>
+      <p>Open to conversations on backend architecture, MLOps, and applied AI.</p>
+      <div class="foot-links">
+        <a href="mailto:duyquangbtx@gmail.com">duyquangbtx@gmail.com</a>
+        <a href="https://github.com/lequocduyquang" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/quang-le-448606197/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://quangle.hashnode.dev" target="_blank" rel="noopener">Blog</a>
+        <a href="https://huggingface.co/quanglequocduy" target="_blank" rel="noopener">Hugging Face</a>
+      </div>
+      <p class="foot-note">Built with plain HTML &amp; CSS · Le Quoc Duy Quang</p>
     </div>
-  </section>
+  </footer>
 
-  <div class="iconbutton">
-    <a href="#home">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    </a>
-  </div>
-
-  <div class="popup" id="popup" class="flex_center">
-    <img src="images/checkmark--outline.svg"/>
-    <h3>Thanks for leaving a recommendation</h3>
-    <button onclick="showPopup(false)">Ok</button>
-  </div>
-
+  <script src="./script.js"></script>
 </body>
 </html>
