@@ -50,10 +50,11 @@
           <span class="sep">/</span> hipages Group <span class="sep">·</span> ASX-listed
         </p>
         <p class="hero-blurb">
-          Core member and <strong>#1 contributor</strong> on the MOX team at Australia's largest online
-          trade marketplace. Primary owner of the <strong>Matching Engine</strong> and core MLOps engineer
-          owning <strong>ML model serving</strong> on Databricks &mdash; shipping AI pricing, recommendation,
-          and generative features end-to-end from mobile to model registry.
+          A core pillar and <strong>#1 contributor</strong> on the MOX / MC team at Australia's largest
+          online trade marketplace. Primary owner of the <strong>Matching Engine</strong>, MLOps engineer
+          owning <strong>ML model serving</strong> on Databricks, and lead of the team's
+          <strong>EKS migration</strong> &mdash; shipping AI pricing, recommendation, and generative
+          features end-to-end from mobile to model registry.
         </p>
 
         <div class="actions">
@@ -146,6 +147,12 @@
               A new pricing paradigm: value each job with an LLM and derive lead price from predicted
               job value &mdash; rolled out as a controlled region/category A/B experiment.
             </p>
+            <div class="result">
+              <span class="rlabel">Team outcome — VBP Phase 1 (MOX-2298), 16-day read</span>
+              <span class="metric"><span class="v">+15.4%</span><span class="k">CV / job · P(uplift) 96.9%</span></span>
+              <span class="metric"><span class="v">+19.9%</span><span class="k">price / claim · P 98.5%</span></span>
+              <span class="metric"><span class="v">~$2.3M/yr</span><span class="k">projected value · shipped</span></span>
+            </div>
             <ul>
               <li>Built a reusable <b>Amazon Bedrock</b> model-chain provider (Claude Sonnet via the
                   AI SDK, IRSA auth, confidence &amp; idempotency guards).</li>
@@ -222,20 +229,23 @@
             <div class="project-top">
               <div>
                 <span class="pidx">05</span>
-                <h3>Cloud Migration &amp; Platform</h3>
+                <h3>EKS Migration &amp; Platform</h3>
               </div>
-              <span class="role">CROSS-REPO</span>
+              <span class="role owner">MIGRATION LEAD</span>
             </div>
             <p class="lead">
-              Led the MOX services' move from the legacy KOPS cluster to <code>hip-eks-prod</code>, plus
-              the IAM and security plumbing behind AI workloads &mdash; across
-              <code>infra-man</code>, <code>marketplace</code>, <code>leads</code>, <code>bruce</code>.
+              Drove the MC/MOX team's migration off the legacy <code>luke</code> (KOPS) cluster to
+              <code>hip-eks-prod</code> &mdash; created the epic, owned the cutover, and coordinated the
+              platform team across <code>infra-man</code>, <code>marketplace</code>, <code>leads</code>,
+              <code>bruce</code>.
             </p>
             <ul>
-              <li>Dark-deployed services to EKS with <b>F5 ingress</b>, <b>IRSA</b> S3 access, Kafka
-                  <b>mTLS</b>, and Bedrock inference-profile IAM (prod + staging).</li>
-              <li>Provisioned Databricks OAuth M2M service principals with capped, yearly-rotated
-                  secrets; cleared <b>24+ high/critical Snyk</b> vulnerabilities across services.</li>
+              <li>Migrated <b>marketplace, leads, and bruce-master-radagast</b> end-to-end &mdash;
+                  dark-deployed with <b>F5 ingress</b>, <b>IRSA</b> S3 access, and Kafka <b>mTLS</b>,
+                  debugging cross-cluster crashloops through to green.</li>
+              <li>Provisioned Bedrock inference-profile IAM and Databricks OAuth M2M service principals
+                  (capped, yearly-rotated); drove infra-drift cleanup (MC-137).</li>
+              <li>Cleared <b>24+ high/critical Snyk</b> vulnerabilities across services along the way.</li>
             </ul>
             <div class="chips">
               <span class="chip">AWS EKS</span><span class="chip">Kubernetes</span>

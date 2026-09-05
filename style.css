@@ -208,6 +208,23 @@ section { padding: 70px 0; }
   content: "▹"; position: absolute; left: 2px; top: 0; color: var(--accent);
 }
 .project li b { color: var(--accent-2); font-weight: 700; }
+/* result callout — team/experiment outcomes */
+.result {
+  display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: baseline;
+  background: linear-gradient(180deg, rgba(241,110,0,.08), rgba(241,110,0,.03));
+  border: 1px solid rgba(241,110,0,.28); border-radius: 10px;
+  padding: 14px 18px; margin: 0 0 20px;
+}
+.result .rlabel {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent-2); width: 100%; margin-bottom: 2px;
+}
+.result .metric { display: flex; flex-direction: column; }
+.result .metric .v {
+  font-family: var(--mono); font-size: 20px; font-weight: 700; color: var(--accent); line-height: 1.1;
+}
+.result .metric .k { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
 .chips { display: flex; flex-wrap: wrap; gap: 7px; }
 .chip {
   font-family: var(--mono); font-size: 12px; color: var(--muted);
