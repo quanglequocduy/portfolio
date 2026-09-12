@@ -63,6 +63,26 @@
     nums.forEach(function (n) { numObs.observe(n); });
   }
 
+  /* ---- click tracking (GoatCounter events) ----
+     Fires an event for any [data-track] element, or for a project card
+     (slug derived from its title). No-ops safely if GoatCounter is blocked. */
+  function track(path, title) {
+    if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+      window.goatcounter.count({ path: 'evt-' + path, title: title || path, event: true });
+    }
+  }
+  document.addEventListener('click', function (e) {
+    var tagged = e.target.closest('[data-track]');
+    if (tagged) { track(tagged.getAttribute('data-track'), tagged.textContent.trim().slice(0, 60)); return; }
+    var card = e.target.closest('.project');
+    if (card) {
+      var h = card.querySelector('h3');
+      var title = h ? h.textContent.trim() : 'project';
+      var slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      track('proj-' + slug, title);
+    }
+  });
+
   /* ---- active nav highlight ---- */
   var sections = ['work', 'skills', 'experience', 'recognition']
     .map(function (id) { return document.getElementById(id); })
