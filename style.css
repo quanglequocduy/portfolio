@@ -313,3 +313,8 @@ footer p { color: var(--muted); margin: 0 0 24px; }
   .project { padding: 22px; }
   .tl-when { margin-left: 0; width: 100%; }
 }
+
+/* ---------- Now (weekly bot) ---------- */
+.week-log { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 8px; }
+.week-log li { color: var(--muted); font-size: 14px; }
+.week-log time { font-family: var(--mono); color: var(--faint); margin-right: 10px; }
