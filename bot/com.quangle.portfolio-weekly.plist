@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Install: cp bot/com.quangle.portfolio-weekly.plist ~/Library/LaunchAgents/ &&
+     launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.quangle.portfolio-weekly.plist
+     Runs Sunday 18:00; if the Mac is asleep then, launchd runs it on wake.
+     zsh -i loads ~/.zshrc for GITHUB_TOKEN and PATH (gh, jq, claude). -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.quangle.portfolio-weekly</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string><string>-ic</string>
+    <string>/Users/quangle/Projects/portfolio/bot/weekly.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict><key>Weekday</key><integer>0</integer><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
+  <key>StandardOutPath</key><string>/Users/quangle/.local/share/portfolio-bot/bot.log</string>
+  <key>StandardErrorPath</key><string>/Users/quangle/.local/share/portfolio-bot/bot.log</string>
+</dict>
+</plist>

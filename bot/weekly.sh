@@ -41,7 +41,7 @@ if [ "$n_merged" -eq 0 ] && [ "$(jq '.in_progress | length' "$RAW")" -eq 0 ]; th
   echo "no activity this week (leave/holiday?), nothing to publish"; exit 0
 fi
 
-summary=$(claude -p --model sonnet --tools "" --no-session-persistence < <(cat <<PROMPT
+cat > "$WORK/prompt.txt" <<PROMPT
 You write the weekly "Now shipping" update on Quang Le's PUBLIC portfolio website.
 Below is raw, CONFIDENTIAL data about his GitHub work this week at his employer (hipages,
 an Australian trades marketplace). Turn it into public-safe highlights a hiring manager
@@ -63,7 +63,7 @@ Reply with ONLY this JSON, nothing else:
 DATA:
 $(cat "$RAW")
 PROMPT
-))
+summary=$(claude -p --model sonnet --tools "" --no-session-persistence < "$WORK/prompt.txt")
 
 # Extract the JSON object even if the model wraps it in prose or fences.
 echo "$summary" | python3 -c 'import sys,re,json; print(json.dumps(json.loads(re.search(r"\{.*\}", sys.stdin.read(), re.S).group())))' \
